@@ -4,7 +4,7 @@ module.exports = postcss.plugin('postcss-andalusian-stylesheets', function (opts
     opts = opts || {};
 
     return function (css) {
-        css.eachDecl(function transformDecl(decl) {
+        css.walkDecls(function transformDecl(decl) {
             decl.prop = decl.prop.replace('fondo', 'background');
             decl.prop = decl.prop.replace('flota', 'float');
             decl.prop = decl.prop.replace('ancho', 'width');
