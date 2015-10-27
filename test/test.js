@@ -64,4 +64,8 @@ describe('postcss-andalusian-stylesheets', function () {
              'a{ color: #000 !important; }', {}, done);
     });
 
+    it('converts linde to margin', function (done) {
+        test('a{ linde: 100px 50px; }', 'a{ margin: 100px 50px; }', { }, done);
+    });
+
 });

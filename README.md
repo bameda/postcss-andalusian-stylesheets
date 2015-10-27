@@ -20,6 +20,7 @@
     espaciado: -1px;
     puntero: manito !importantisimo;
     text-transform: mayuscula;
+    linde: 100px 50px;
 }
 ```
 
@@ -37,6 +38,7 @@
     letter-spacing: -1px;
     cursor: pointer !important;
     text-transform: uppercase;
+    margin: 100px 50px;
 }
 ```
 

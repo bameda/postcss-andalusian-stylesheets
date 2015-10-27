@@ -23,6 +23,7 @@ module.exports = postcss.plugin('postcss-andalusian-stylesheets', function (opts
             decl.prop = decl.prop.replace('puntero', 'cursor');
             decl.value = decl.value.replace('manito', 'pointer');
             decl.value = decl.value.replace('mayuscula', 'uppercase');
+            decl.prop = decl.prop.replace('linde', 'margin');
 
             if (decl.value.indexOf('!importantisimo') >= 0) {
                 decl.value = decl.value.replace(/\s*!importantisimo\s*/, '');
