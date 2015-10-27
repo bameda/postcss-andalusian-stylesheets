@@ -5,28 +5,29 @@ module.exports = postcss.plugin('postcss-andalusian-stylesheets', function (opts
 
     return function (css) {
         css.walkDecls(function transformDecl(decl) {
-            decl.prop = decl.prop.replace('fondo', 'background');
-            decl.prop = decl.prop.replace('flota', 'float');
-            decl.prop = decl.prop.replace('ancho', 'width');
-            decl.prop = decl.prop.replace('alto', 'height');
+            decl.prop = decl.prop.replace('detrah', 'background');
+            decl.prop = decl.prop.replace('agarrao', 'float');
+            decl.prop = decl.prop.replace('ansho', 'width');
+            decl.prop = decl.prop.replace('largo', 'height');
             decl.prop = decl.prop.replace('reondeao', 'border-radius');
-            decl.value = decl.value.replace('izquierda', 'left');
-            decl.prop = decl.prop.replace('izquierda', 'left');
-            decl.value = decl.value.replace('derecha', 'right');
-            decl.prop = decl.prop.replace('derecha', 'right');
+            decl.value = decl.value.replace('isquierdah', 'left');
+            decl.prop = decl.prop.replace('isquierdah', 'left');
+            decl.value = decl.value.replace('deresha', 'right');
+            decl.prop = decl.prop.replace('deresha', 'right');
             decl.value = decl.value.replace('en-to-lo-arto', 'top');
             decl.prop = decl.prop.replace('en-to-lo-arto', 'top');
-            decl.value = decl.value.replace('abajo', 'bottom');
-            decl.prop = decl.prop.replace('abajo', 'bottom');
-            decl.prop = decl.prop.replace('espaciado', 'letter-spacing');
-            decl.value = decl.value.replace('subrayado', 'underline');
-            decl.prop = decl.prop.replace('puntero', 'cursor');
+            decl.value = decl.value.replace('por-lo-bahini', 'bottom');
+            decl.prop = decl.prop.replace('por-lo-bahini', 'bottom');
+            decl.prop = decl.prop.replace('huecoh', 'letter-spacing');
+            decl.value = decl.value.replace('subrayao', 'underline');
+            decl.prop = decl.prop.replace('fleshita', 'cursor');
             decl.value = decl.value.replace('manito', 'pointer');
-            decl.value = decl.value.replace('mayuscula', 'uppercase');
-            decl.prop = decl.prop.replace('linde', 'margin');
+            decl.value = decl.value.replace('en-grande', 'uppercase');
+            decl.prop = decl.prop.replace('separao', 'margin');
+            decl.prop = decl.prop.replace('lah-letrah', 'text-transform');
 
-            if (decl.value.indexOf('!importantisimo') >= 0) {
-                decl.value = decl.value.replace(/\s*!importantisimo\s*/, '');
+            if (decl.value.indexOf('!pisha') >= 0) {
+                decl.value = decl.value.replace(/\s*!pisha\s*/, '');
                 decl.important = true;
             }
         });

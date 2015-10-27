@@ -9,18 +9,18 @@
 ```css
 .foo {
     reondeao: 3px;
-    fondo: #fff;
-    ancho: 300px;
-    alto: 200px;
-    flota: izquierda;
+    detrah: #fff;
+    ansho: 300px;
+    largo: 200px;
+    agarrao: isquierdah;
     en-to-lo-arto: 10px;
-    abajo: 0px;
-    izquierda: 100px;
-    derecha: 100px;
-    espaciado: -1px;
-    puntero: manito !importantisimo;
-    text-transform: mayuscula;
-    linde: 100px 50px;
+    por-lo-bahini: 0px;
+    isquierdah: 100px;
+    deresha: 100px;
+    huecoh: -1px;
+    puntero: manito !pisha;
+    lah-letrah: en-grande;
+    separao: 100px 50px;
 }
 ```
 
