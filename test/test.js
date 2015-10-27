@@ -76,4 +76,8 @@ describe('postcss-andalusian-stylesheets', function () {
         test('a{ agarrao: none; }', 'a{ float: none; }', { }, done);
     });
 
+    it('converts jorgorio to animation', function (done) {
+        test('a{ jorgorio: musha 5s; }', 'a{ animation: musha 5s; }', { }, done);
+    });
+
 });
