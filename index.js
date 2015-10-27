@@ -25,6 +25,7 @@ module.exports = postcss.plugin('postcss-andalusian-stylesheets', function (opts
             decl.value = decl.value.replace('en-grande', 'uppercase');
             decl.prop = decl.prop.replace('separao', 'margin');
             decl.prop = decl.prop.replace('lah-letrah', 'text-transform');
+            decl.prop = decl.prop.replace('fiezta', 'animation');
 
             if (decl.value.indexOf('!pisha') >= 0) {
                 decl.value = decl.value.replace(/\s*!pisha\s*/, '');
