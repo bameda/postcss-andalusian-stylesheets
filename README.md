@@ -13,7 +13,7 @@
     ancho: 300px;
     alto: 200px;
     flota: izquierda;
-    arriba: 10px;
+    en-to-lo-arto: 10px;
     abajo: 0px;
     izquierda: 100px;
     derecha: 100px;

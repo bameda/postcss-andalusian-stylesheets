@@ -31,8 +31,8 @@ describe('postcss-andalusian-stylesheets', function () {
         test('a{ alto: 300px; }', 'a{ height: 300px; }', { }, done);
     });
 
-    it('converts arriba to top', function (done) {
-        test('a{ arriba: 300px; }', 'a{ top: 300px; }', { }, done);
+    it('converts en-to-lo-arto to top', function (done) {
+        test('a{ en-to-lo-arto: 300px; }', 'a{ top: 300px; }', { }, done);
     });
 
     it('converts abajo to bottom', function (done) {
