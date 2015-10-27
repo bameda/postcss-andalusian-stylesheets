@@ -1,5 +1,10 @@
-sudo: false
 language: node_js
+sudo: false
+
+
 node_js:
-  - stable
+  - node
+  - iojs
+  - "4.1"
+  - "4.0"
   - "0.12"
