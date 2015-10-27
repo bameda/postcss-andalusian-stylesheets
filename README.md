@@ -21,6 +21,7 @@
     puntero: manito !pisha;
     lah-letrah: en-grande;
     separao: 100px 50px;
+    fiezta: musha 5s;
 }
 ```
 
@@ -39,6 +40,7 @@
     cursor: pointer !important;
     text-transform: uppercase;
     margin: 100px 50px;
+    animation: musha 5s;
 }
 ```
 

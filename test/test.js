@@ -76,4 +76,8 @@ describe('postcss-andalusian-stylesheets', function () {
         test('a{ agarrao: none; }', 'a{ float: none; }', { }, done);
     });
 
+    it('converts fiezta to animation', function (done) {
+        test('a{ fiezta: musha 5s; }', 'a{ animation: musha 5s; }', { }, done);
+    });
+
 });
