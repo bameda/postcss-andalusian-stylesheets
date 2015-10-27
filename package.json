@@ -1,0 +1,31 @@
+{
+  "name": "postcss-andalusian-stylesheets",
+  "version": "0.0.0",
+  "description": "PostCSS plugin for writing Andalusian Stylesheets.",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "andalusian",
+    "espanol"
+  ],
+  "author": "David Barragán <bameda@dbarragan.com>",
+  "license": "MIT",
+  "repository": "bameda/postcss-andalusian-stylesheets",
+  "bugs": {
+    "url": "https://github.com/bameda/postcss-andalusian-stylesheets/issues"
+  },
+  "homepage": "https://github.com/bameda/postcss-andalusian-stylesheets",
+  "dependencies": {
+    "postcss": "^5.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.0.0",
+    "gulp-mocha": "^2.1.3"
+  },
+  "scripts": {
+    "test": "gulp"
+  }
+}
