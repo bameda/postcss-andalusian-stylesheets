@@ -15,8 +15,8 @@ var test = function (input, output, opts, done) {
 
 describe('postcss-andalusian-stylesheets', function () {
 
-    it('converts redondeado to border-radius', function (done) {
-        test('a{ redondeado: 3px; }', 'a{ border-radius: 3px; }', { }, done);
+    it('converts reondeao to border-radius', function (done) {
+        test('a{ reondeao: 3px; }', 'a{ border-radius: 3px; }', { }, done);
     });
 
     it('converts fondo to background', function (done) {

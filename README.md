@@ -8,7 +8,7 @@
 
 ```css
 .foo {
-    redondeado: 3px;
+    reondeao: 3px;
     fondo: #fff;
     ancho: 300px;
     alto: 200px;
