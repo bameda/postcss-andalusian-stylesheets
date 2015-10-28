@@ -27,10 +27,12 @@ module.exports = postcss.plugin('postcss-andalusian-stylesheets', function (opts
             decl.prop = decl.prop.replace('lah-letrah', 'text-transform');
             decl.prop = decl.prop.replace('jorgorio', 'animation');
 
-            if (decl.value.indexOf('!pisha') >= 0) {
-                decl.value = decl.value.replace(/\s*!pisha\s*/, '');
+            if (decl.value.indexOf('!arfavó') >= 0) {
+                decl.value = decl.value.replace(/\s*!arfavó\s*/, '');
                 decl.important = true;
             }
         });
+        css.replaceValues(/mijillah/g, { fast: 'mijillah' }, 'px');
+        css.replaceValues(/peasoh/g, { fast: 'peasoh' }, 'rem');
     };
 });

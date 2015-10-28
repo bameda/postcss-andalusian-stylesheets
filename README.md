@@ -8,20 +8,20 @@
 
 ```css
 .foo {
-    reondeao: 3px;
+    reondeao: 3mijillah;
     detrah: #fff;
-    ansho: 300px;
-    largo: 200px;
+    ansho: 300mijillah;
+    largo: 200mijillah;
     agarrao: isquierdah;
-    en-to-lo-arto: 10px;
-    por-lo-bahini: 0px;
+    en-to-lo-arto: 2peasoh;
+    por-lo-bahini: 20mijillah;
     isquierdah: 100px;
     deresha: 100px;
     huecoh: -1px;
-    puntero: manito !pisha;
+    puntero: manito !arfavó;
     lah-letrah: en-grande;
-    separao: 100px 50px;
-    jorgorio: musha 5s;
+    separao: 100mijillah 50mijillah;
+    jorgorio: musho 5s;
 }
 ```
 
@@ -40,7 +40,7 @@
     cursor: pointer !important;
     text-transform: uppercase;
     margin: 100px 50px;
-    animation: musha 5s;
+    animation: musho 5s;
 }
 ```
 

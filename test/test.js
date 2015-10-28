@@ -59,8 +59,8 @@ describe('postcss-andalusian-stylesheets', function () {
         test('a{ cursor: manito; }', 'a{ cursor: pointer; }', { }, done);
     });
 
-    it('converts !pisha to !important', function (done) {
-        test('a{ color: #000 !pisha; }',
+    it('converts !arfavó to !important', function (done) {
+        test('a{ color: #000 !arfavó; }',
              'a{ color: #000 !important; }', {}, done);
     });
 
@@ -77,7 +77,14 @@ describe('postcss-andalusian-stylesheets', function () {
     });
 
     it('converts jorgorio to animation', function (done) {
-        test('a{ jorgorio: musha 5s; }', 'a{ animation: musha 5s; }', { }, done);
+        test('a{ jorgorio: musho 5s; }', 'a{ animation: musho 5s; }', { }, done);
     });
 
+    it('converts px to mijillah', function (done) {
+        test('a{ separao: 100mijillah 50mijillah; }', 'a{ margin: 100px 50px; }', { }, done);
+    });
+
+    it('converts rem to peasoh', function (done) {
+        test('a{ separao: 4peasoh 2peasoh; }', 'a{ margin: 4rem 2rem; }', { }, done);
+    });
 });
