@@ -32,7 +32,7 @@
     width: 300px;
     height: 200px;
     float: left;
-    top: 10px;
+    top: 2rem;
     bottom: 0px;
     left: 100px;
     right: 100px;
