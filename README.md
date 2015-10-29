@@ -33,7 +33,7 @@
     height: 200px;
     float: left;
     top: 2rem;
-    bottom: 0px;
+    bottom: 20px;
     left: 100px;
     right: 100px;
     letter-spacing: -1px;
