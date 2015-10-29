@@ -15,9 +15,9 @@
     agarrao: isquierdah;
     en-to-lo-arto: 2peasoh;
     por-lo-bahini: 20mijillah;
-    isquierdah: 100px;
-    deresha: 100px;
-    huecoh: -1px;
+    isquierdah: 100mijillah;
+    deresha: 100mijillah;
+    huecoh: -1mijillah;
     puntero: manito !arfavó;
     lah-letrah: en-grande;
     separao: 100mijillah 50mijillah;
