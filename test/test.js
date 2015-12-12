@@ -54,11 +54,11 @@ describe('postcss-andalusian-stylesheets', function () {
     it('converts fleshita to cursor', function (done) {
         test('a{ fleshita: pointer; }', 'a{ cursor: pointer; }', { }, done);
     });
-    
+
     it('converts cursor to fleshita', function (done) {
         test('a{ fleshita: manito; }', 'a{ cursor: pointer; }', { }, done);
     });
-    
+
     it('converts pointer to manito', function (done) {
         test('a{ fleshita: manito; }', 'a{ cursor: pointer; }', { }, done);
     });
