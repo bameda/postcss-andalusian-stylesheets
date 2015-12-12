@@ -18,7 +18,7 @@
     isquierdah: 100mijillah;
     deresha: 100mijillah;
     huecoh: -1mijillah;
-    puntero: manito !arfavó;
+    fleshita: manito !arfavó;
     lah-letrah: en-grande;
     separao: 100mijillah 50mijillah;
     jorgorio: musho 5s;
