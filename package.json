@@ -1,6 +1,6 @@
 {
   "name": "postcss-andalusian-stylesheets",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin for writing Andalusian Stylesheets.",
   "keywords": [
     "postcss",
@@ -9,7 +9,7 @@
     "andalusian",
     "espanol"
   ],
-  "author": "David Barragán <bameda@dbarragan.com>",
+  "author": "David Barragán Merino <bameda@dbarragan.com>",
   "license": "MIT",
   "repository": "bameda/postcss-andalusian-stylesheets",
   "bugs": {
