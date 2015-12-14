@@ -1,3 +1,8 @@
+== 0.0.3 (unreleased)
+
+- Add test dir to the node package.
+
+
 == 0.0.2 (2015-12-14)
 
 - Use gulp 4.0
