@@ -1,4 +1,6 @@
-# PostCSS Andalusian Stylesheets [![Build Status][ci-img]][ci]
+# PostCSS Andalusian Stylesheets
+
+[![Build Status][ci-img]][ci]
 
 [PostCSS] plugin for writing Andalusian Stylesheets..
 
@@ -53,4 +55,35 @@ postcss([ require('postcss-andalusian-stylesheets') ])
 See [PostCSS] docs for examples for your environment.
 
 
-> This plugin is based on [ismamz/postcss-spanish-stylesheets](https://github.com/ismamz/postcss-spanish-stylesheets)
+## Contribute
+
+Fork the [repo](https://github.com/bameda/postcss-andalusian-stylesheets)
+
+Setup the devel env with ```npm install```
+
+Run ```gulp``` (it use gulp 4)
+
+Edit ```src/properties.json``` or ```src/values.json```. You can translate one item to only one value or several. For example
+
+```json
+{
+    (...),
+    "blue": [
+        "asú",
+        "azú"
+    ],
+    (...)
+    "color": "coló",
+    (...)
+}
+```
+Add some tests if you want.
+
+Add your name to ```AUTHORS.md```.
+
+Make me a PR.
+
+
+## Thanks
+
+This plugin is based on [ismamz/postcss-spanish-stylesheets](https://github.com/ismamz/postcss-spanish-stylesheets)  and [Semigradsky/postcss-russian-stylesheets](https://github.com/Semigradsky/postcss-russian-stylesheets/blob/master/src/index.js)
