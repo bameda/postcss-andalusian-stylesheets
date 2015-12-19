@@ -1,6 +1,6 @@
-# PostCSS Andalusian Stylesheets
+# PostCSS Andalusian Stylesheets [![Build Status][ci-img]][ci]
 
-[![Build Status][ci-img]][ci]
+[![](https://nodei.co/npm/postcss-andalusian-stylesheets.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/postcss-andalusian-stylesheets)
 
 [PostCSS] plugin for writing Andalusian Stylesheets..
 
