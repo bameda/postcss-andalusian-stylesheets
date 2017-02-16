@@ -8,26 +8,15 @@
 [ci-img]:  https://travis-ci.org/bameda/postcss-andalusian-stylesheets.svg
 [ci]:      https://travis-ci.org/bameda/postcss-andalusian-stylesheets
 
-```css
-.foo {
-    reondeao: 3mijillah;
-    detrah: #fff;
-    ansho: 300mijillah;
-    largo: 200mijillah;
-    agarrao: isquierdah;
-    en-to-lo-arto: 2peasoh;
-    por-lo-bahini: 20mijillah;
-    isquierdah: 100mijillah;
-    deresha: 100mijillah;
-    huecoh: -1mijillah;
-    fleshita: manito !arfavó;
-    lah-letrah: en-grande;
-    separao: 100mijillah 50mijillah;
-    jorgorio: musho 5s;
-}
-```
-
-```css
+<table>
+    <tbody>
+        <tr>
+            <th align="center">CSS original code</th>
+            <th align="center">postcss-andalusian-stylesheets</th>
+        </tr>
+        <tr>
+            <td>
+                <pre lang="css">
 .foo {
     border-radius: 3px;
     background: #fff;
@@ -44,7 +33,31 @@
     margin: 100px 50px;
     animation: musho 5s;
 }
-```
+                </pre>
+            </td>
+            <td>
+                <pre lang="css">
+.foo {
+    reondeao: 3mijillah;
+    detrah: #fff;
+    ansho: 300mijillah;
+    largo: 200mijillah;
+    agarrao: isquierdah;
+    en-to-lo-arto: 2peasoh;
+    por-lo-bahini: 20mijillah;
+    isquierdah: 100mijillah;
+    deresha: 100mijillah;
+    huecoh: -1mijillah;
+    fleshita: manito !arfavó;
+    lah-letrah: en-grande;
+    separao: 100mijillah 50mijillah;
+    jorgorio: musho 5s;
+}
+                </pre>
+            </td>
+        </tr>
+    <table>
+<tbody>
 
 ## Usage
 
