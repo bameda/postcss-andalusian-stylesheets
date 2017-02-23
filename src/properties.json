@@ -14,7 +14,7 @@
     "background": "detrah",
     "background-attachment": null,
     "background-clip": null,
-    "background-color": null,
+    "background-color": "coló-de-detrah",
     "background-image": null,
     "background-origin": null,
     "background-position": null,
@@ -223,4 +223,3 @@
     "z-index": null,
     "zoom": null
 }
-

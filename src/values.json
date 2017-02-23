@@ -14,7 +14,7 @@
     "alphabetic": null,
     "alternate": null,
     "alternate-reverse": null,
-    "always": null,
+    "always": "ziempre",
     "aqua": null,
     "armenian": null,
     "attr": null,
@@ -165,7 +165,7 @@
     "lower-greek": null,
     "lower-latin": null,
     "lower-roman": null,
-    "lowercase": null,
+    "lowercase": "letra-shica",
     "ltr": null,
     "manual": null,
     "maroon": null,
@@ -356,4 +356,3 @@
     "zoom-in": null,
     "zoom-out": null
 }
-

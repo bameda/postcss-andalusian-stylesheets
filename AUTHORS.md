@@ -8,3 +8,4 @@ generally made postcss-andalusian-stylesheets that much better:
 
 - Andrés Viedma (@andres_viedma)
 - Francis Vega <hisconer@gmail.com>
+- Sergio Zamarro (@zamarrowski)
