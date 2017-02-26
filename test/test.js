@@ -125,17 +125,121 @@ describe('postcss-andalusian-stylesheets', function () {
         {}, done);
     });
 
-    it('converts px to mijillah', done => {
+    it('converts mijillah to px', done => {
         test(
             'a{ separao: 100mijillah 50mijillah; }',
             'a{ margin: 100px 50px; }',
         {}, done);
     });
 
-    it('converts rem to peasoh', done => {
+    it('converts peasoh to rem', done => {
         test(
             'a{ separao: 4peasoh 2peasoh; }',
             'a{ margin: 4rem 2rem; }',
+        {}, done);
+    });
+
+    it('converts coló-de-detrah to background-color', done => {
+        test(
+            'a{ coló-de-detrah: #ffffff; }',
+            'a{ background-color: #ffffff; }',
+        {}, done);
+    });
+
+    it('converts ziempre to always', done => {
+        test(
+            'h1 {page-break-before: ziempre; }',
+            'h1 {page-break-before: always; }',
+        {}, done);
+    });
+
+    it('converts borde-isquierdoh to border-left', done => {
+        test(
+            'a{ borde-isquierdoh: thick double #ff0000; }',
+            'a{ border-left: thick double #ff0000; }',
+        {}, done);
+    });
+
+    it('converts ansho-del-borde-isquierdoh to border-left-width', done => {
+        test(
+            'a{ ansho-del-borde-isquierdoh: thick; }',
+            'a{ border-left-width: thick; }',
+        {}, done);
+    });
+
+    it('converts eztilo-del-borde-isquierdoh to border-left-style', done => {
+        test(
+            'a{ eztilo-del-borde-isquierdoh: double; }',
+            'a{ border-left-style: double; }',
+        {}, done);
+    });
+
+    it('converts coló-del-borde-isquierdoh to border-left-color', done => {
+        test(
+            'a{ coló-del-borde-isquierdoh: #ff0000; }',
+            'a{ border-left-color: #ff0000; }',
+        {}, done);
+    });
+    it('converts borde-deresho to border-right', done => {
+        test(
+            'a{ borde-deresho: thick double #ff0000; }',
+            'a{ border-right: thick double #ff0000; }',
+        {}, done);
+    });
+
+    it('converts ansho-del-borde-deresho to border-right-width', done => {
+        test(
+            'a{ ansho-del-borde-deresho: thick; }',
+            'a{ border-right-width: thick; }',
+        {}, done);
+    });
+
+    it('converts eztilo-del-borde-deresho to border-right-style', done => {
+        test(
+            'a{ eztilo-del-borde-deresho: double; }',
+            'a{ border-right-style: double; }',
+        {}, done);
+    });
+
+    it('converts coló-del-borde-deresho to border-right-color', done => {
+        test(
+            'a{ coló-del-borde-deresho: #ff0000; }',
+            'a{ border-right-color: #ff0000; }',
+        {}, done);
+    });
+
+    it('converts letra-shica to lowercase', done => {
+        test(
+            'a{ text-transform: letra-shica; }',
+            'a{ text-transform: lowercase; }',
+        {}, done);
+    });
+
+    it('converts la-primera-en-grande to capitalize', done => {
+        test(
+            'a{ text-transform: la-primera-en-grande; }',
+            'a{ text-transform: capitalize; }',
+        {}, done);
+    });
+
+    it('converts daleá to italic', done => {
+        test(
+            'a{ font-style: daleá; }',
+            'a{ font-style: italic; }',
+        {}, done);
+    });
+
+    it('converts na-de-ná to none', done => {
+        test(
+            'div{ display: na-de-ná }',
+            'div{ display: none }',
+        {}, done);
+    });
+
+    it('converts quieto-parao to paused', done => {
+        test(
+            'dic{ animation-play-state: quieto-parao; }',
+            'dic{ animation-play-state: paused; }',
         {}, done);
     });
 });
