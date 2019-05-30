@@ -242,4 +242,18 @@ describe('postcss-andalusian-stylesheets', function () {
             'dic{ animation-play-state: paused; }',
         {}, done);
     });
+
+    it('converts colorao to red', done => {
+        test(
+            'a{ detrah: colorao; }',
+            'a{ background: red; }',
+        {}, done);
+    });
+
+    it('converts asituna to olive', done => {
+        test(
+            'a{ detrah: asituna; }',
+            'a{ background: olive; }',
+        {}, done);
+    });
 });
