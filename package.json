@@ -46,7 +46,8 @@
    "postcss": "^8.2.6"
  },
  "scripts": {
-   "test": "gulp build"
+   "build": "gulp build",
+   "test": "gulp test"
  },
  "babel": {
    "presets": [

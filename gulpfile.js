@@ -49,15 +49,16 @@ gulp.task('run:test', () => {
 
 gulp.task(
   'build',
-  gulp.series(
-    'clean',
-    gulp.parallel('lint', 'babel:srcFiles', 'babel:srcTestFiles', 'copy:Json'),
-    'run:test'
-  )
+  gulp.series('clean', gulp.parallel('lint', 'babel:srcFiles', 'copy:Json'))
+)
+
+gulp.task(
+  'test',
+  gulp.series('clean', gulp.parallel('build', 'babel:srcTestFiles'), 'run:test')
 )
 
 gulp.task('watch', () => {
-  gulp.watch(watchedFiles, gulp.series('build'))
+  gulp.watch(watchedFiles, gulp.series('test'))
 })
 
 gulp.task('default', gulp.series('build', 'watch'))
