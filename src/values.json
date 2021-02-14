@@ -210,7 +210,7 @@
     "paused": "quieto-parao",
     "pc": null,
     "perspective": null,
-    "pointer": "manito",
+    "pointer": "manita",
     "pre": null,
     "pre-line": null,
     "pre-wrap": null,
@@ -345,7 +345,7 @@
     "wait": null,
     "wavy": null,
     "weight": null,
-    "white": null,
+    "white": "encalao",
     "wrap": null,
     "wrap-reverse": null,
     "x-large": null,
@@ -354,5 +354,7 @@
     "xx-small": null,
     "yellow": null,
     "zoom-in": null,
-    "zoom-out": null
+    "zoom-out": null,
+    "#fff": "encalao",
+    "#ffffff": "encalao"
 }

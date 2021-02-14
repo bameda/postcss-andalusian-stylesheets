@@ -51,11 +51,11 @@ describe('postcss-andalusian-stylesheets', () => {
   })
 
   it('converts cursor to fleshita', done => {
-    test('a{ fleshita: pointer; }', 'a{ cursor: pointer; }', {}, done)
+    test('a{ fleshita: manita; }', 'a{ cursor: pointer; }', {}, done)
   })
 
-  it('converts pointer to manito', done => {
-    test('a{ cursor: manito; }', 'a{ cursor: pointer; }', {}, done)
+  it('converts pointer to manita', done => {
+    test('a{ cursor: manita; }', 'a{ cursor: pointer; }', {}, done)
   })
 
   it('converts !arfavó to !important', done => {
@@ -98,8 +98,8 @@ describe('postcss-andalusian-stylesheets', () => {
 
   it('converts coló-de-detrah to background-color', done => {
     test(
-      'a{ coló-de-detrah: #ffffff; }',
-      'a{ background-color: #ffffff; }',
+      'a{ coló-de-detrah: encalao; }',
+      'a{ background-color: white; }',
       {},
       done
     )

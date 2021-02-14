@@ -19,7 +19,7 @@
                 <pre lang="css">
 .foo {
     border-radius: 3px;
-    background: #fff;
+    background: encalao;
     width: 300px;
     height: 200px;
     float: left;
@@ -39,7 +39,7 @@
                 <pre lang="css">
 .foo {
     reondeao: 3mijillah;
-    detrah: #fff;
+    detrah: white;
     ansho: 300mijillah;
     largo: 200mijillah;
     agarrao: isquierdah;
@@ -48,7 +48,7 @@
     isquierdah: 100mijillah;
     deresha: 100mijillah;
     huecoh: -1mijillah;
-    fleshita: manito !arfavó;
+    fleshita: manita !arfavó;
     lah-letrah: en-grande;
     separao: 100mijillah 50mijillah;
     jorgorio: musho 5s;

@@ -1,6 +1,6 @@
 {
   "name": "postcss-andalusian-stylesheets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "PostCSS plugin for writing Andalusian Stylesheets.",
   "keywords": [
     "postcss",
