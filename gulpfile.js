@@ -1,61 +1,63 @@
-var gulp = require('gulp');
+let gulp = require('gulp')
+let babel = require('gulp-babel')
+let del = require('del')
+let eslint = require('gulp-eslint')
+let jest = require('@jacobq/gulp-jest').default
 
-var srcFiles = ['src/**.js'];
-var srcTestFiles = ['test/*.js'];
-var jsFiles = ['gulpfile.js'].concat(srcFiles, srcTestFiles);
-var jsonFiles = ['src/*.json'];
-var watchedFiles = jsFiles.concat(jsonFiles);
-var testFiles = ['dist/test/*.js'];
-var dist = ['dist/**'];
+let srcFiles = ['src/**.js']
+let srcTestFiles = ['test/*.js']
+let jsFiles = ['gulpfile.js'].concat(srcFiles, srcTestFiles)
+let jsonFiles = ['src/*.json']
+let watchedFiles = jsFiles.concat(jsonFiles)
+let testFiles = ['dist/test/*.js']
+let dist = ['dist/**']
 
+gulp.task('clean', () => {
+  return del(dist)
+})
 
-gulp.task('clean', function () {
-    var del = require('del');
-    return del(dist);
-});
+gulp.task('lint', () => {
+  return gulp
+    .src(jsFiles)
+    .pipe(eslint({ fix: true }))
+    .pipe(eslint.format())
+    .pipe(gulp.dest(file => file.base))
+    .pipe(eslint.failAfterError())
+})
 
-gulp.task('lint', function () {
-    var eslint = require('gulp-eslint');
-    return gulp.src(jsFiles)
-        .pipe(eslint())
-        .pipe(eslint.format())
-        .pipe(eslint.failAfterError());
-});
+gulp.task('babel:srcFiles', () => {
+  return gulp
+    .src(srcFiles)
+    .pipe(babel({ presets: ['@babel/env'] }))
+    .pipe(gulp.dest('dist'))
+})
 
-gulp.task('toES5:srcFiles', function () {
-    var babel = require('gulp-babel');
-    return gulp.src(srcFiles)
-        .pipe(babel({ presets: ['es2015'] }))
-        .pipe(gulp.dest('dist'));
-});
+gulp.task('copy:Json', () => {
+  return gulp.src(jsonFiles).pipe(gulp.dest('dist'))
+})
 
-gulp.task('copy:Json', function () {
-    return gulp.src(jsonFiles)
-        .pipe(gulp.dest('dist'));
-});
+gulp.task('babel:srcTestFiles', () => {
+  return gulp
+    .src(srcTestFiles)
+    .pipe(babel({ presets: ['@babel/env'] }))
+    .pipe(gulp.dest('dist/test'))
+})
 
-gulp.task('toES5:srcTestFiles', function () {
-    var babel = require('gulp-babel');
-    return gulp.src(srcTestFiles)
-        .pipe(babel({ presets: ['es2015'] }))
-        .pipe(gulp.dest('dist/test'));
-});
+gulp.task('run:test', () => {
+  return gulp.src(testFiles).pipe(jest({}))
+})
 
-gulp.task('run:test', function () {
-    var mocha = require('gulp-mocha');
-    return gulp.src(testFiles, { read: false })
-        .pipe(mocha());
-});
-
-gulp.task('build', gulp.series(
+gulp.task(
+  'build',
+  gulp.series(
     'clean',
-    gulp.parallel('lint', 'toES5:srcFiles', 'toES5:srcTestFiles', 'copy:Json'),
+    gulp.parallel('lint', 'babel:srcFiles', 'babel:srcTestFiles', 'copy:Json'),
     'run:test'
-));
+  )
+)
 
-gulp.task('watch', function () {
-    gulp.watch(watchedFiles, gulp.series('build'));
-});
+gulp.task('watch', () => {
+  gulp.watch(watchedFiles, gulp.series('build'))
+})
 
-gulp.task('default', gulp.series('build', 'watch'));
-
+gulp.task('default', gulp.series('build', 'watch'))

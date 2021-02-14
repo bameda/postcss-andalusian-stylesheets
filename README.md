@@ -61,6 +61,10 @@
 
 ## Usage
 
+```shell
+npm install --save-dev postcss postcss-andalusian-stylesheets
+```
+
 ```js
 postcss([ require('postcss-andalusian-stylesheets') ])
 ```
