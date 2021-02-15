@@ -19,7 +19,7 @@
                 <pre lang="css">
 .foo {
     border-radius: 3px;
-    background: encalao;
+    background: white;
     width: 300px;
     height: 200px;
     float: left;
@@ -39,7 +39,7 @@
                 <pre lang="css">
 .foo {
     reondeao: 3mijillah;
-    detrah: white;
+    detrah: encalao;
     ansho: 300mijillah;
     largo: 200mijillah;
     agarrao: isquierdah;
