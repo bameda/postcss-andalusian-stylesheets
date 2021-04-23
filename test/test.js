@@ -83,6 +83,30 @@ describe('postcss-andalusian-stylesheets', () => {
     test('a{ jorgorio: musho 5s; }', 'a{ animation: musho 5s; }', {}, done)
   })
 
+  it('converts jorgorio-padonde to animation-direction', done => {
+    test('a{ jorgorio-padonde: palante; }', 'a{ animation-direction: normal; }', {}, done)
+  })
+
+  it('converts patrâ to reverse', done => {
+    test('a{ jorgorio-padonde: patrâ; }', 'a{ animation-direction: reverse; }', {}, done)
+  })
+
+  it('converts palante-patrâ to alternate', done => {
+    test('a{ jorgorio-padonde: palante-patrâ; }', 'a{ animation-direction: alternate; }', {}, done)
+  })
+
+  it('converts patrâ-palante to alternate-reverse', done => {
+    test('a{ jorgorio-padonde: patrâ-palante; }', 'a{ animation-direction: alternate-reverse; }', {}, done)
+  })
+
+  it('converts heredao to inherit', done => {
+    test('a{ jorgorio-padonde: heredao; }', 'a{ animation-direction: inherit; }', {}, done)
+  })
+
+  it('converts de-primerâ to initial', done => {
+    test('a{ jorgorio-padonde: de-primerâ; }', 'a{ animation-direction: initial; }', {}, done)
+  })
+
   it('converts mijillah to px', done => {
     test(
       'a{ separao: 100mijillah 50mijillah; }',
