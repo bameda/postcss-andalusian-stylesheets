@@ -31,7 +31,7 @@
     cursor: pointer !important;
     text-transform: uppercase;
     margin: 100px 50px;
-    animation: musho 5s;
+    animation: 5s;
     animation-direction: alternate;
 }
                 </pre>
